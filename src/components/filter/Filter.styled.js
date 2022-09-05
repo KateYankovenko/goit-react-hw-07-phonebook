@@ -11,7 +11,6 @@ export const FilterInput = styled.input`
 width: ${p => p.theme.space[8]}px;
 height: ${p => p.theme.space[5]}px;
 margin-bottom: ${p => p.theme.space[5]}px;
-
 &:hover,
 &:focus{
     outline-color: ${p => p.theme.colors.accent};

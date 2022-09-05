@@ -1,10 +1,11 @@
 import styled from '@emotion/styled';
 import { Form } from 'formik';
+import  ClipLoader from 'react-spinners/ClipLoader';
+
 
 export const StyledField = styled.input`
 width: ${p => p.theme.space[8]}px;
 height: ${p => p.theme.space[5]}px;
-
 &:hover,
 &:focus{
     outline-color: ${p => p.theme.colors.accent};
@@ -25,7 +26,6 @@ margin-bottom: ${p => p.theme.space[4]}px;
 color: ${p => p.theme.colors.black};
 font-weight: ${p => p.theme.fontWeights.bold};
 font-size: ${p => p.theme.fontSizes.m};
-
 &:not(:first-of-type){
     margin-top: ${p => p.theme.space[5]}px;
 }
@@ -41,7 +41,6 @@ border-color: ${p => p.theme.colors.accent};
 font-size: ${p => p.theme.fontSizes.m};
 color: ${p => p.theme.colors.black};
 font-weight: ${p => p.theme.fontWeights.bold};
-
 &:hover,
 &:focus{
     background-color: ${p => p.theme.colors.accent};
@@ -51,4 +50,9 @@ font-weight: ${p => p.theme.fontWeights.bold};
 
 export const ErrorMessage = styled.div`
 color: ${p => p.theme.colors.error};
+`
+
+export const StyledClipLoader = styled(ClipLoader)`
+margin-right: ${p => p.theme.space[3]}px;
+color:  ${p => p.theme.colors.accent};
 `
